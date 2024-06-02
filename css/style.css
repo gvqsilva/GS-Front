@@ -39,6 +39,19 @@ nav a {
   font-weight: bold;
 }
 
+.links{
+  transition: background-color 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.links:hover{
+  background-color: #5293a0;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
 ul li{
   margin-top: 5px;
 }
