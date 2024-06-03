@@ -80,6 +80,10 @@ section img {
   border-radius: 8px;
 }
 
+#sec5 img {
+  width: 65%;
+}
+
 h2 {
   color: var(--cor-do-titulo);
 }
