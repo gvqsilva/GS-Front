@@ -73,6 +73,10 @@ section {
   text-align: center;
 }
 
+#secprototipo img{
+  width: 50%;
+}
+
 section img {
   width: 100%;
   height: auto;
