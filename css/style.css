@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 :root{
   --cor-principal:#007d96; 
   --cor-do-titulo: #0a9396;
   --cor-da-logo:#002544;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
   font-family: 'Oswald', sans-serif;
@@ -52,7 +52,6 @@ nav a {
   border-radius: 10px;
   font-size: 20px;
 }
-
 
 ul li{
   margin-top: 5px;
@@ -108,4 +107,74 @@ footer {
 }
 html{
   scroll-behavior: smooth;
+}
+
+.logo img{
+  width: 90px;
+  margin-left: 43%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+.nav-list li a:hover{
+  text-decoration: underline 2px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px;
+  transition: all 0.3s;
+}
+
+/* Add this to display mobile menu on smaller screens */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
